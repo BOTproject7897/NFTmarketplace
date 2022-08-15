@@ -265,7 +265,7 @@ export default function upload() {
             type="text"
             name="price"
             className={styles.textInput}
-            placeholder="Price (in ETH)"
+            placeholder="Price (in FTM)"
             style={{ minWidth: "320px" }}
           />
 

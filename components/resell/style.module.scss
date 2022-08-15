@@ -1,0 +1,41 @@
+.listingTypeContainer {
+    display: flex;
+    max-width: 540px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+    z-index: 999;
+
+}
+
+.listingType {
+  opacity: 0;
+  width: 0;
+  position: fixed;
+}
+
+.listingTypeLabel {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  background-color: #262936;
+  padding: 16px 20px;
+  font-size: 16px;
+  border-top: 3px solid #444;
+  border-radius: 0px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.listingType:checked + label {
+    border-top: 3px solid transparent;
+    border-radius: 0px;
+    color: #418dff;
+    background: linear-gradient(to right, #262936, #262936),
+    linear-gradient(to right, #418dff, #418dff);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}

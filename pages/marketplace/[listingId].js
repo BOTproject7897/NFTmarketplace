@@ -118,7 +118,7 @@ export default function ListingPage() {
             Owned by <b>{listing.sellerAddress?.slice(0, 6)}</b>
           </p>
         </div>
-          <h2 className={styles.priceSection}><i className={styles.polygon} />
+          <h2 className={styles.priceSection}><i className={styles.fantom} />
             <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
             {listing.buyoutCurrencyValuePerToken.symbol}
           </h2>

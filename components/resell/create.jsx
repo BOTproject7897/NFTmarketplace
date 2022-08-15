@@ -14,6 +14,7 @@ import { MARKETPLACE_ADDRESS } from "../../const/contract";
 import { useRouter } from "next/router";
 import Swal from 'sweetalert2';
 import styles from "../../styles/utils.module.scss";
+import typeStyles from "./style.module.scss";
 
 const pageTitle = 'Resell NFT'
 const siteTitle = 'DaffaDev NFT marketplace'
@@ -161,16 +162,16 @@ export default function Create() {
         </div>
             <div className={styles.spacerBottom}></div>
           {/*  */}
-          <div className={styles.hidden}>
+          <div className={typeStyles.listingTypeContainer}>
             <input
               type="radio"
               name="listingType"
               id="directListing"
               value="directListing"
               defaultChecked
-              className="btn-check"
+              className={typeStyles.listingType}
             />
-            <label htmlFor="directListing" className="btn btn-outline-success">
+            <label htmlFor="directListing" className={typeStyles.listingTypeLabel}>
               Direct Listing
             </label>
             <input
@@ -178,9 +179,9 @@ export default function Create() {
               name="listingType"
               id="auctionListing"
               value="auctionListing"
-              className="btn-check"
+              className={typeStyles.listingType}
             />
-            <label htmlFor="auctionListing" className="btn btn-outline-info">
+            <label htmlFor="auctionListing" className={typeStyles.listingTypeLabel}>
               Auction Listing
             </label>
           </div>
@@ -217,7 +218,7 @@ export default function Create() {
             type="text"
             name="price"
             className={styles.textInput} id="Price"
-            placeholder="Sale Price"
+            placeholder="Sale Price (in FTM)"
           />
             </div>
 

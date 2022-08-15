@@ -89,10 +89,10 @@ export default function Listings() {
                   />
 <div className={styles.boxBody}>
 <div className={styles.avatar}>
-<Image src={contractMetadata.image} width={40} height={40} alt="avatar" />
+<Image src={contractMetadata.image} style={{borderRadius: '50%'}} width={40} height={40} alt="avatar" />
 </div>
                   <h4>{listing.asset.name}</h4>
-                  <p className={styles.priceSection}><i className={styles.polygon}/>
+                  <p className={styles.priceSection}><i className={styles.fantom}/>
                     {listing.buyoutCurrencyValuePerToken.displayValue}{" "}
                     {listing.buyoutCurrencyValuePerToken.symbol}
                   </p>
