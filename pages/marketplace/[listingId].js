@@ -118,15 +118,15 @@ export default function ListingPage() {
             Owned by <b>{listing.sellerAddress?.slice(0, 6)}</b>
           </p>
         </div>
-          <h2 className={styles.priceSection}><i className={styles.fantom} />
-            <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
-            {listing.buyoutCurrencyValuePerToken.symbol}
-          </h2>
 <div >
 <span className={styles.description}>{listing.asset.description}</span>
 </div>
           <div className={styles.buySection}
           >
+          <h2 className={styles.priceSection}><i className={styles.fantom} />
+            <b>{listing.buyoutCurrencyValuePerToken.displayValue}</b>{" "}
+            {listing.buyoutCurrencyValuePerToken.symbol}
+          </h2>
 {listing?.type === ListingType.Auction ? (
             <div className={styles.auctionSection}
             >
